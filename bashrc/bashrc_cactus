@@ -1,0 +1,112 @@
+# .bashrc
+
+if [ "$PS1" ]; then
+	echo "here in .bashrc"
+	PS1="[\H \w]\$ "
+fi
+
+TERM=xterm
+
+export PATH=./:$PATH:/usr/bin:/usr/sbin:/etc:$HOME/bin
+
+# prevent escaping of command line vars
+# shopt -u progcomp
+
+# aliases
+
+#alias cancom='cd /lfs/h1/ops/canned/com'
+#alias candcom='cd /lfs/h1/ops/canned/dcom'
+alias to='vi /u/steven.simon/to'
+alias ptmp='cd /lfs/h2/emc/ptmp/steven.simon'
+alias stmp='cd /lfs/h2/emc/stmp/steven.simon'
+#alias cdnoscrub='cd /lfs/h2/emc/obsproc/noscrub/steven.simon'
+alias cdnoscrubv='cd /lfs/h2/emc/vpppg/noscrub/steven.simon'
+alias his='history'
+alias lltr='ls -ltr'
+#alias cdgitwkspc='cd /lfs/h2/emc/obsproc/noscrub/steven.simon/gitwkspc'
+#alias cdgithub='cd /lfs/h2/emc/obsproc/noscrub/steven.simon/githubwkspc'
+alias cdgithubv='cd /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace'
+#alias cdgitinstall='cd /lfs/h2/emc/obsproc/noscrub/steven.simon/install'
+alias gitbranch='git --no-pager branch'
+alias gitbrancha='git --no-pager branch -a'
+alias grso='git remote show origin'
+alias qq='qstat -u $USER'
+alias qqw='qstat -tu $USER -w'
+alias sysconfig='cat /lfs/h1/ops/prod/config/prodmachinefile'
+alias catdevprod='cat /lfs/h1/ops/prod/config/prodmachinefile'
+alias gda='cd /lfs/h2/emc/global/noscrub/emc.global/dump'
+
+
+# modules
+
+module load PrgEnv-intel/8.1.0
+module load craype/2.7.10
+module load envvar/1.0
+module load intel/19.1.3.304
+module load cray-mpich/8.1.9
+#module load intel craype cray-mpich
+module load prod_envir/2.0.5
+module load prod_util/2.0.8
+module load git/2.29.0
+module load cfp/2.0.4
+module load util_shared/1.4.0
+module load w3nco/2.4.1
+module load bufr/11.6.0
+export DEBUFR=$(which debufr.x)
+module load w3emc/2.7.3
+module load bacio/2.4.1
+module load libjpeg/9c
+module load imagemagick/7.0.8-7
+module load wgrib2/2.0.8_wmo
+module load grib_util/1.2.4
+module load hdf5/1.10.6
+module load netcdf/4.7.4
+#module unload bufr_dump
+
+#module use
+#/lfs/h2/emc/obsproc/noscrub/shelley.melchior/install/bufr-dump-rel.1.0.0/modulefiles
+#module use /apps/ops/para/nco/modulefiles/compiler/intel/19.1.3.304
+module load bufr_dump/1.1.2
+module unload prepobs
+#module use /lfs/h2/emc/obsproc/noscrub/shelley.melchior/install/prepobs/modulefiles
+#module use /lfs/h2/emc/obsproc/noscrub/shelley.melchior/install/prepobs-nr-33/modulefiles
+module load prepobs/1.0.1
+module use /apps/test/lmodules/core/
+module load GrADS/2.2.2
+
+# python
+module load python/3.8.6
+module load proj/7.1.0
+module load geos/3.8.1
+module use /lfs/h1/mdl/nbm/save/apps/modulefiles
+module unload python-modules/3.8.6
+module load grib2io/1.0.2
+#export PYTHONPATH="${PYTHONPATH}:/lfs/h2/emc/vpppg/noscrub/${USER}/python"
+# MET / METplus
+#export HPC_OPT=/apps/ops/para/libs
+export HPC_OPT=/apps/ops/prod/libs
+#module use /apps/ops/para/libs/modulefiles/compiler/intel/19.1.3.304
+module use /apps/ops/prod/libs/modulefiles/compiler/intel/19.1.3.304
+module load intel
+module load gsl
+module load python/3.8.6
+module load netcdf/4.7.4
+module load met/11.0.0
+module load metplus/5.0.0
+# ---
+module list
+
+# utilities
+
+#export PATH=$PATH:/u/jack.woollen/bin
+#export PATH=$PATH:/u/diane.stokes/bin
+
+# TIPS
+#  ----
+# sshKeys location: /u/sshKeys/$USER
+# DCOMROOT=/lfs/h1/ops/canned/dcom
+# COMROOT=/lfs/h1/ops/canned/com
+# To find machine name: cat /etc/cluster_name
+# To find prod vs dev machine: cat /lfs/h1/ops/prod/config/prodmachinefile
+
+

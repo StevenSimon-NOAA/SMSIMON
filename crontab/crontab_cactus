@@ -1,0 +1,3 @@
+SHELL=/bin/bash -l
+
+00 09 * * * qsub -o /lfs/h2/emc/ptmp/steven.simon/evs_out/jevs_global_ens_wave_grid2obs_prep.out /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/EVS/ecf/scripts/global_ens/prep/jevs_global_ens_wave_grid2obs_prep.ecf
