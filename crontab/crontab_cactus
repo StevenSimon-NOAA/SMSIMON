@@ -8,6 +8,6 @@ SHELL=/bin/bash -l
 00 10 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/trigger_scripts/global_ens_wave_stats_trigger_script.sh
 00 11 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/trigger_scripts/global_ens_wave_plots_trigger_script.sh
 
-30 01 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/trigger_scripts/global_ens_gefs_atmos_prep_trigger_script.sh
+30 01 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/trigger_scripts/global_ens_atmos_prep_trigger_script.sh
 30 01 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/trigger_scripts/global_ens_headline_prep_trigger_script.sh
 30 01 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/trigger_scripts/global_ens_naefs_atmos_prep_trigger_script.sh
