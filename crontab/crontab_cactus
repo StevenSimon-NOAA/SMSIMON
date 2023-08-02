@@ -20,5 +20,5 @@ SHELL=/bin/bash -l
 
 # WCOSS2 to EMC RZDM Plot Image Transfers
 
-15 11 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/cron_jobs/scripts/transfer_rzdm_emc_para_global_ens_wave_plots.sh
-45 17 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/cron_jobs/scripts/transfer_rzdm_emc_para_global_ens_atmos_plots.sh
+15 11 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/cron_jobs/scripts/transfer_rzdm_emc_para_global_ens_wave_plots.sh 1> /u/steven.simon/cron_jobs/logs/log_transfer_rzdm_emc_para_global_ens_wave_plots.out 2>&1
+45 17 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/cron_jobs/scripts/transfer_rzdm_emc_para_global_ens_atmos_plots.sh 1> /u/steven.simon/cron_jobs/logs/log_transfer_rzdm_emc_para_global_ens_atmos_plots.out 2>&1
