@@ -1,4 +1,4 @@
-#PBS -N transfer_rzdm_emc_para_global_ens_atmo_plots
+#PBS -N transfer_rzdm_emc_para_global_ens_atmos_plots
 #PBS -o /u/steven.simon/cron_jobs/logs/log_transfer_rzdm_emc_para_global_ens_atmos_plots.out
 #PBS -e /u/steven.simon/cron_jobs/logs/log_transfer_rzdm_emc_para_global_ens_atmos_plots.out
 #PBS -S /bin/bash
