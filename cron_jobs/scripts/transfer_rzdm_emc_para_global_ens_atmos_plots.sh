@@ -11,5 +11,5 @@
 
 export PDY2m1=$(date -d "48 hours ago" '+%Y%m%d')
 rsync -ahr -P /lfs/h2/emc/ptmp/emc.vpppg/evs/v1.0/plots/global_ens/atmos.${PDY2m1}/*gefs*.tar ssimon@emcrzdm.ncep.noaa.gov:/home/people/emc/www/htdocs/users/verification/global/gefs/para/atmos/tar_files/.
-rsync -ahr -P /lfs/h2/emc/ptmp/emc.vpppg/evs/v1.0/plots/global_ens/atmos.${PDY2m1}/*naefs*.tar ssimon@emcrzdm.ncep.noaa.gov:/home/people/emc/www/htdocs/users/verification/global/naefs/para/atmos/tar_files/.
+rsync -ahr -P /lfs/h2/emc/ptmp/emc.vpppg/evs/v1.0/plots/global_ens/atmos.${PDY2m1}/*naefs*.tar ssimon@emcrzdm.ncep.noaa.gov:/home/people/emc/www/htdocs/users/verification/global/naefs/para/tar_files/.
 
