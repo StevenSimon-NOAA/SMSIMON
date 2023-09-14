@@ -10,5 +10,5 @@
 #PBS -V
 
 export PDYm1=$(date -d "24 hours ago" '+%Y%m%d')
-rsync -ahr -P /lfs/h2/emc/vpppg/ptmp/emc.vpppg/evs/v1.0/plots/global_ens/wave.${PDYm1}/*.tar ssimon@emcrzdm.ncep.noaa.gov:/home/people/emc/www/htdocs/users/verification/global/gefs/para/wave/tar_files/.
+rsync -ahr -P /lfs/h2/emc/ptmp/emc.vpppg/evs/v1.0/plots/global_ens/wave.${PDYm1}/*.tar ssimon@emcrzdm.ncep.noaa.gov:/home/people/emc/www/htdocs/users/verification/global/gefs/para/wave/tar_files/.
 
