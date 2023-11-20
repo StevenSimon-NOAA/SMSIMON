@@ -10,8 +10,8 @@ qsub /lfs/h2/emc/vpppg/noscrub/steven.simon/EVS/dev/drivers/scripts/stats/global
 sleep 120
 qsub /lfs/h2/emc/vpppg/noscrub/steven.simon/EVS/dev/drivers/scripts/stats/global_ens/jevs_global_ens_cmce_atmos_snowfall_stats.sh
 sleep 120
-qsub /lfs/h2/emc/vpppg/noscrub/steven.simon/EVS/dev/drivers/scripts/stats/global_ens/jevs_global_ens_cmce_wmo_grid2grid_stats.sh
-sleep 120
+#qsub /lfs/h2/emc/vpppg/noscrub/steven.simon/EVS/dev/drivers/scripts/stats/global_ens/jevs_global_ens_cmce_wmo_grid2grid_stats.sh
+#sleep 120
 qsub /lfs/h2/emc/vpppg/noscrub/steven.simon/EVS/dev/drivers/scripts/stats/global_ens/jevs_global_ens_ecme_atmos_grid2grid_stats.sh
 sleep 120
 qsub /lfs/h2/emc/vpppg/noscrub/steven.simon/EVS/dev/drivers/scripts/stats/global_ens/jevs_global_ens_ecme_atmos_grid2obs_stats.sh
@@ -37,8 +37,8 @@ qsub /lfs/h2/emc/vpppg/noscrub/steven.simon/EVS/dev/drivers/scripts/stats/global
 sleep 120
 qsub /lfs/h2/emc/vpppg/noscrub/steven.simon/EVS/dev/drivers/scripts/stats/global_ens/jevs_global_ens_gefs_headline_grid2grid_stats.sh
 sleep 120
-qsub /lfs/h2/emc/vpppg/noscrub/steven.simon/EVS/dev/drivers/scripts/stats/global_ens/jevs_global_ens_gefs_wmo_grid2grid_stats.sh
-sleep 120
+#qsub /lfs/h2/emc/vpppg/noscrub/steven.simon/EVS/dev/drivers/scripts/stats/global_ens/jevs_global_ens_gefs_wmo_grid2grid_stats.sh
+#sleep 120
 qsub /lfs/h2/emc/vpppg/noscrub/steven.simon/EVS/dev/drivers/scripts/stats/global_ens/jevs_global_ens_gfs_headline_grid2grid_stats.sh
 sleep 120
 qsub /lfs/h2/emc/vpppg/noscrub/steven.simon/EVS/dev/drivers/scripts/stats/global_ens/jevs_global_ens_naefs_atmos_grid2grid_stats.sh
