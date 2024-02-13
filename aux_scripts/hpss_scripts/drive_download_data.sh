@@ -65,14 +65,15 @@ export GET_GEFS_FCSTS=NO
 
 # Select forecast start, end, and increment to download (applies to GFS_FCSTS and GEFS_FCSTS)
 export FHR_START=0			 # Typically 0 hours (beginning of forecast)
-export FHR_END=240                       # Typically 240 hours (10-day forecast)
+export FHR_END=384                       # Typically 240 hours (10-day forecast)
 export FHR_INC=6                         # Typically 6-hour timestep between forecast files
 
 # ******************************************
 # ****Select initialization dates/hours*****
 # ******************************************
 # Specify initialization dates to download
-for longdate in 20190601
+PDY=$1
+for longdate in $PDY 
 do
 
 # Specify the init. hours to download on each initalization date (typically 00 12)

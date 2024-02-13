@@ -1,0 +1,5 @@
+# To run drive_download_data.sh:
+# ./drive_download_data.sh YYYYMMDD
+# where YYYYMMDD is the date for which data should be retrieve.
+# for example, 
+./drive_download_data.sh 20240222
