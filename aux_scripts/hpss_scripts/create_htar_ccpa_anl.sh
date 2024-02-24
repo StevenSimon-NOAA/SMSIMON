@@ -78,7 +78,7 @@ cat > ${DATA_PATH}/untar_analyses/untar_ccpa/ccpa.${VYYYYMMDD}/${VHH}/htar_ccpa_
 #PBS -e ${OUTPUT_PATH}/out_htar_ccpa_anl_${VALID}.err
 #PBS -l select=1:ncpus=1:mem=4GB
 #PBS -q dev_transfer
-#PBS -l walltime=02:00:00
+#PBS -l walltime=03:00:00
 #PBS -A VERF-DEV
 
 cd ${DATA_PATH}/untar_analyses/untar_ccpa/ccpa.${VYYYYMMDD}/${VHH}
