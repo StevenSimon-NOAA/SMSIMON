@@ -16,8 +16,8 @@ SHELL=/bin/bash -l
 #30 01 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/trigger_scripts/global_ens_headline_prep_trigger_script.sh
 #30 01 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/trigger_scripts/global_ens_naefs_atmos_prep_trigger_script.sh
 
-30 01 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/trigger_scripts/global_ens_prep_trigger_script.sh
-00 07 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/trigger_scripts/global_ens_stats_trigger_script.sh
+00 03 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/trigger_scripts/global_ens_prep_trigger_script.sh
+00 10 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/trigger_scripts/global_ens_stats_trigger_script.sh
 # WCOSS2 to EMC RZDM Plot Image Transfers
 
 00 12 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/cron_jobs/scripts/transfer_rzdm_emc_para_global_ens_wave_plots.sh 1> /u/steven.simon/cronjobs/logs/log_transfer_rzdm_emc_para_global_ens_wave_plots.out 2>&1
