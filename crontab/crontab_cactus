@@ -18,13 +18,24 @@ SHELL=/bin/bash -l
 
 00 03 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/trigger_scripts/global_ens_prep_trigger_script.sh
 00 10 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/trigger_scripts/global_ens_stats_trigger_script.sh
+
+#30 01 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/trigger_scripts/global_ens_prep_trigger_script.sh
+#00 07 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/trigger_scripts/global_ens_stats_trigger_script.sh
+
 # WCOSS2 to EMC RZDM Plot Image Transfers
 
-00 12 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/cron_jobs/scripts/transfer_rzdm_emc_para_global_ens_wave_plots.sh 1> /u/steven.simon/cronjobs/logs/log_transfer_rzdm_emc_para_global_ens_wave_plots.out 2>&1
-00 23 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/cron_jobs/scripts/transfer_rzdm_emc_para_global_ens_atmos_plots.sh 1> /u/steven.simon/cronjobs/logs/log_transfer_rzdm_emc_para_global_ens_atmos_plots.out 2>&1
+#00 12 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/cron_jobs/scripts/transfer_rzdm_emc_para_global_ens_wave_plots.sh 1> /u/steven.simon/cronjobs/logs/log_transfer_rzdm_emc_para_global_ens_wave_plots.out 2>&1
+#00 23 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/cron_jobs/scripts/transfer_rzdm_emc_para_global_ens_atmos_plots.sh 1> /u/steven.simon/cronjobs/logs/log_transfer_rzdm_emc_para_global_ens_atmos_plots.out 2>&1
 
 # EVS Real-Time for WPC Stats Archive
 
 00 04 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/trigger_scripts/global_ens_wpc_prep_trigger_script.sh
 00 11 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/trigger_scripts/global_ens_wpc_stats_trigger_script.sh
+
+#00 03 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/trigger_scripts/global_ens_wpc_prep_trigger_script.sh
+#00 08 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/gitworkspace/SMSIMON/trigger_scripts/global_ens_wpc_stats_trigger_script.sh
+
+# HPSS Valid Dataset Retrieval
+
+00 04 * * * sh /lfs/h2/emc/vpppg/noscrub/steven.simon/hpss_scripts/wrapper.sh 20221101 20221201 1> /u/steven.simon/cronjobs/logs/log_hpss_valid_data.out 2>&1
 
