@@ -1,0 +1,10 @@
+3,5,10,15,20,25,30,35,40,45,50,55 * * * * touch /home/people/emc/ssimon/test.txt
+05 12 * * * python3 /home/people/emc/www/htdocs/users/verification/global/gefs/scripts/para_untar_images_wave.py
+10 23 * * * python3 /home/people/emc/www/htdocs/users/verification/global/gefs/scripts/para_untar_images_atmos.py
+10 23 * * * python3 /home/people/emc/www/htdocs/users/verification/global/naefs/scripts/para_untar_images_naefs_atmos.py
+
+
+45 10 * * * python3 /home/people/emc/www/htdocs/users/verification/global/gefs/scripts/prod_untar_images_wave.py 1>/home/people/emc/ssimon/logs/evs_global_ens_wave_untar.out 2>&1
+45 17 * * * python3 /home/people/emc/www/htdocs/users/verification/global/gefs/scripts/prod_untar_images_atmos.py 1>/home/people/emc/ssimon/logs/evs_global_ens_gefs_atmos_untar.out 2>&1
+45 17 * * * python3 /home/people/emc/www/htdocs/users/verification/global/naefs/scripts/prod_untar_images_naefs_atmos.py 1>/home/people/emc/ssimon/logs/evs_global_ens_naefs_atmos_untar.out 2>&1
+
