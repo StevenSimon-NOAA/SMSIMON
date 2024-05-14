@@ -49,9 +49,9 @@ export GET_FORECASTS=NO
 # *****************************************
 # Select which analysis types to download (YES/NO)
 export GET_GFS_ANL=YES
+export GET_GFS_F000=NO
 export GET_CCPA_ANL=YES
 export GET_GDAS_ANL=YES
-
 # Select analyses start, end, and increment to download
 export ANL_START=0 	# Start downloading analysis files for the first initialization date if set to 0
 export ANL_END=12       # Stop downloading analysis files on the first init. date + 6 hours + X hours (set X to 378 if you want to go 16 days beyond last init date)
@@ -105,6 +105,12 @@ if [ $GET_ANALYSES = YES ]; then
    		${SCRIPTS_PATH}/create_htar_gfs_anl.sh
    		sleep 3
 	fi
+	echo "*********************"
+	if [ $GET_GFS_F000 = YES ]; then
+		 echo "Copy/submit script to download GFS F000 data"
+	         ${SCRIPTS_PATH}/create_htar_gfs_f000.sh
+		 sleep 3
+        fi
 	echo "*********************"
 	if [ $GET_CCPA_ANL = YES ]; then
    		echo "Copy/submit script to download CCPA analysis data"
